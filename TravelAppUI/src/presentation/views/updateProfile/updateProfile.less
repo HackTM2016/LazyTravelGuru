@@ -1,0 +1,43 @@
+.listdemoListControls {
+  /* Add some right padding so that the text doesn't overlap the buttons */ }
+  .listdemoListControls md-divider {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .listdemoListControls md-list-item > p,
+  .listdemoListControls md-list-item > .md-list-item-inner > p,
+  .listdemoListControls md-list-item .md-list-item-inner > p,
+  .listdemoListControls md-list-item .md-list-item-inner > .md-list-item-inner > p {
+    -webkit-user-select: none;
+    /* Chrome all / Safari all */
+    -moz-user-select: none;
+    /* Firefox all */
+    -ms-user-select: none;
+    /* IE 10+ */
+    user-select: none;
+    /* Likely future */ }
+  .listdemoListControls .secondary-button-padding p {
+    padding-right: 100px; }
+
+
+
+@media (max-width: 900px) {
+  .update-form{
+    width:100%;
+  }
+  .right-img{
+    display: none;
+  }
+}
+@media (min-width: 900px) {
+  .update-form{
+    width:70%;
+  }
+  .right-img{
+    float: right;
+    width: 30%;
+    position:fixed;
+    right:0;
+    margin-top:100px;
+  }
+
+}

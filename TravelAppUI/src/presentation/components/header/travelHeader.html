@@ -1,0 +1,48 @@
+<div class="travel-header" ng-hide="isLoginPage()">
+
+  <md-toolbar class="md-theme-indigo travel-small-navbar">
+    <div class="md-toolbar-tools">
+      <h2 class="md-display-1">Lazy Travel Guru</h2>
+        <span flex></span>
+        <md-button class="md-icon-button md-primary" aria-label="Menu" ng-click="toggleRight()" ng-show="isUserLoggedIn()">
+          <i class="material-icons">menu</i>
+        </md-button>
+      </div>
+  </md-toolbar>
+
+  <md-toolbar class="md-theme-indigo travel-big-navbar">
+    <div class="md-toolbar-tools">
+        <h3 class="md-display-1">
+          Lazy Travel Guru
+          <md-icon class="material-icons" style="margin-left: 6px; margin-bottom: 5px;">flight</md-icon>
+          <md-icon class="material-icons" style="margin-left: 6px; margin-bottom: 5px;">terrain</md-icon>        
+        </h3>
+        <span flex></span>
+        <md-button class="md-raised" aria-label="Learn More" ng-click="goToNextState()" ng-show="isUserLoggedIn() && nextPage">
+          {{nextPage}}
+        </md-button>
+        <md-button class="md-raised" aria-label="Learn More" ng-click="logout()" ng-show="isUserLoggedIn()">
+          Log Out
+        </md-button>
+      </div>
+  </md-toolbar>
+
+
+
+  <md-sidenav class="md-sidenav-right md-whiteframe-z2" md-component-id="right">
+    <md-toolbar class="md-theme-light">
+      <h1 class="md-toolbar-tools"></h1>
+    </md-toolbar>
+    <md-content layout-padding>
+      <md-list-item ng-click="goToNextState();toggleRight();" ng-show="isUserLoggedIn() && nextPage">
+        <p>{{nextPage}}</p>
+      </md-list-item>
+      <md-divider></md-divider>
+      <md-list-item ng-click="logout($event);toggleRight();" ng-show="isUserLoggedIn()">
+        <p>Log out</p>
+      </md-list-item>
+      <md-divider></md-divider>
+    </md-list>
+    </md-content>
+  </md-sidenav>
+  </div.

@@ -1,0 +1,32 @@
+
+<md-content layout-padding>
+  <md-button class="md-raised md-primary edit-button" ng-click="goToEditProfile()">Edit Profile</md-button>
+  <h1 class="md-display-1" >Profile</h1>
+  <p class="md-title" > It seems that you have not responded to our questions. <a href="/#/updateProfile">Please do it!</a></p>
+
+
+    <md-tabs md-dynamic-height md-border-bottom>
+      <md-tab label="Profile Picture">
+        <md-content class="md-padding">
+          <h3 class="md-display-1">Profile Picture</h3>
+          <img src="http://www.lcfc.com/images/common/bg_player_profile_default_big.png"/>
+        </md-content>
+      </md-tab>
+      <md-tab label="Contact Details">
+        <md-content class="md-padding">
+          <h3 class="md-display-1">Basic Informations</h3>
+          <h3 class="md-display-5">Name: {{user.name}}</h3>
+          <h3 class="md-display-5">Address: {{user.address}}</h3>
+          <h3 class="md-display-5">Home Town: {{user.town}}</h3>
+          <h3 class="md-display-5">Phone: {{user.phone}}</h3>
+
+        </md-content>
+      </md-tab>
+      <md-tab label="Preferences">
+        <md-content class="md-padding">
+          <h3 class="md-display-1">Hobbies & Work</h3>
+          <h3 class="md-display-5">Work: {{user.work}}</h3>
+        </md-content>
+      </md-tab>
+    </md-tabs>
+  </md-content>

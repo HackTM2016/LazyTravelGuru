@@ -1,0 +1,472 @@
+@media (max-width: 900px) {
+  .travel-flight-card {
+    width: 100%;
+  }
+  .home-title {
+    font-size: 24px;
+    font-weight: 300;
+  }
+  .home-right-img {
+    display: none;
+  }
+}
+@media (min-width: 900px) {
+  .travel-flight-card {
+    width: 70%;
+  }
+  .home-title {
+    font-size: 30px;
+  }
+  .home-right-img {
+    float: right;
+    max-width: 30%;
+    position: fixed;
+    right: 0;
+    bottom: 90px;
+    margin-top: 100px;
+    z-index: 9;
+  }
+}
+.home-loading-text {
+  color: grey;
+}
+.text-brown {
+  color: #000019 !important;
+}
+@media (max-width: 900px) {
+  .travel-login-form {
+    width: 100%;
+  }
+}
+@media (min-width: 900px) {
+  .travel-login-form {
+    width: 50%;
+  }
+  .travel-login-button {
+    float: right;
+    position: fixed;
+    right: 0;
+    z-index: 9999;
+    color: white;
+    font-weight: 400;
+    padding-right: 20px;
+    padding-top: 10px;
+  }
+}
+.manu-footer {
+  bottom: 0;
+  position: fixed;
+  z-index: 9999;
+  color: white;
+  font-weight: 300;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+.travel-title {
+  color: white;
+  padding: 20px;
+  cursor: pointer;
+  z-index: 9999;
+}
+.dialogdemoBasicUsage #popupContainer {
+  position: relative;
+}
+.dialogdemoBasicUsage .footer {
+  width: 100%;
+  text-align: center;
+  margin-left: 20px;
+}
+.dialogdemoBasicUsage .footer,
+.dialogdemoBasicUsage .footer > code {
+  font-size: 0.8em;
+  margin-top: 50px;
+}
+.dialogdemoBasicUsage button {
+  width: 200px;
+}
+.dialogdemoBasicUsage div#status {
+  color: #c60008;
+}
+.login-background {
+  width: 100%;
+  height: auto;
+  background-image: url(http://soviet-off.com/data/out/4/IMG_395830.png);
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.css-boss {
+  /**
+ * Paper Plane
+ */
+  /*Paper Plane: Container*/
+  /*Paper Plane: Image*/
+  /*Paper Plane: Animation*/
+  /**
+ * Clouds
+ */
+  /*Cloud Sizing*/
+  /*Cloud: Animation*/
+}
+.css-boss html,
+.css-boss body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+.css-boss * {
+  position: relative;
+}
+.css-boss .frame {
+  width: 500px;
+  height: auto;
+  margin: 15% auto 0;
+  position: absolute;
+  width: 100%;
+}
+.css-boss svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.css-boss .plane-container {
+  width: 200px;
+  margin: 0px auto;
+  z-index: 3;
+}
+.css-boss .plane {
+  width: 100%;
+  height: 60px;
+}
+.css-boss .plane-container {
+  -webkit-animation: paper-plane-scoping 2s alternate infinite;
+  -moz-animation: paper-plane-scoping 2s alternate infinite;
+  animation: paper-plane-scoping 2s alternate infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+@-webkit-keyframes paper-plane-scoping {
+  0% {
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(100px);
+    -moz-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+}
+.css-boss .plane {
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation: paper-plane-soaring 4s forwards infinite;
+  -moz-animation: paper-plane-soaring 4s forwards infinite;
+  animation: paper-plane-soaring 4s forwards infinite;
+}
+@-webkit-keyframes paper-plane-soaring {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  40% {
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    transform: rotate(15deg);
+  }
+  50% {
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    transform: rotate(15deg);
+  }
+  60% {
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+  70% {
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+.css-boss .clouds {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  transform: translateZ(0);
+}
+.css-boss .cloud {
+  position: absolute;
+  top: 20%;
+  width: 300px;
+  right: 0;
+  opacity: 1;
+}
+.css-boss .cloud.front {
+  z-index: 9;
+}
+.css-boss .cloud.distant {
+  z-index: 1;
+}
+.css-boss .cloud.background {
+  z-index: 1;
+}
+.css-boss .cloud.smaller {
+  margin-right: 400px;
+  width: 100px;
+  margin-top: 50px;
+}
+.css-boss .cloud.small {
+  margin-right: 200px;
+  width: 150px;
+}
+.css-boss .cloud.big {
+  width: 500px;
+  margin-top: 50px;
+  margin-right: 150px;
+}
+.css-boss .cloud.massive {
+  width: 600px;
+  margin-top: 20px;
+  margin-right: 0px;
+}
+.css-boss .cloud {
+  -webkit-animation-name: cloud-movement;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-direction: forwards;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 8s;
+  -moz-animation-name: cloud-movement;
+  -moz-animation-timing-function: linear;
+  -moz-animation-direction: forwards;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-duration: 8s;
+  animation-name: cloud-movement;
+  animation-timing-function: linear;
+  animation-direction: forwards;
+  animation-iteration-count: infinite;
+  animation-duration: 8s;
+}
+.css-boss .slow {
+  -webkit-animation-duration: 9.2s;
+  -moz-animation-duration: 9.2s;
+  animation-duration: 9.2s;
+}
+.css-boss .slower {
+  -webkit-animation-duration: 11.2s;
+  -moz-animation-duration: 11.2s;
+  animation-duration: 11.2s;
+}
+.css-boss .slowest {
+  -webkit-animation-duration: 13.5s;
+  -moz-animation-duration: 13.5s;
+  animation-duration: 13.5s;
+}
+.css-boss .super-slow {
+  -webkit-animation-duration: 20.5s;
+  -moz-animation-duration: 20.5s;
+  animation-duration: 20.5s;
+}
+@-webkit-keyframes cloud-movement {
+  0% {
+    opacity: 0.1;
+    -webkit-transform: translateX(300px);
+    -moz-transform: translateX(300px);
+    transform: translateX(300px);
+  }
+  10% {
+    opacity: 0.7;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(-1000px);
+    -moz-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+  }
+}
+.tabsdemoDynamicHeight md-content {
+  background-color: transparent !important;
+}
+.tabsdemoDynamicHeight md-content md-tabs {
+  background: #f6f6f6;
+  border: 1px solid #e1e1e1;
+}
+.tabsdemoDynamicHeight md-content md-tabs md-tabs-wrapper {
+  background: white;
+}
+.tabsdemoDynamicHeight md-content h1:first-child {
+  margin-top: 0;
+}
+.edit-button {
+  position: absolute;
+  right: 0;
+  margin-top: 10px;
+}
+.listdemoListControls {
+  /* Add some right padding so that the text doesn't overlap the buttons */
+}
+.listdemoListControls md-divider {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.listdemoListControls md-list-item > p,
+.listdemoListControls md-list-item > .md-list-item-inner > p,
+.listdemoListControls md-list-item .md-list-item-inner > p,
+.listdemoListControls md-list-item .md-list-item-inner > .md-list-item-inner > p {
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+  /* Likely future */
+}
+.listdemoListControls .secondary-button-padding p {
+  padding-right: 100px;
+}
+@media (max-width: 900px) {
+  .update-form {
+    width: 100%;
+  }
+  .right-img {
+    display: none;
+  }
+}
+@media (min-width: 900px) {
+  .update-form {
+    width: 70%;
+  }
+  .right-img {
+    float: right;
+    width: 30%;
+    position: fixed;
+    right: 0;
+    margin-top: 100px;
+  }
+}
+@media (max-width: 766px) {
+  .travel-small-navbar {
+    display: block;
+  }
+  .travel-big-navbar {
+    display: none;
+  }
+}
+@media (min-width: 767px) {
+  .travel-small-navbar {
+    display: none;
+  }
+  .travel-big-navbar {
+    display: block;
+  }
+}
+.background-img {
+  background-image: url(/presentation/airliner-plane-sunset.jpg);
+}
+.frame {
+  width: 500px;
+  height: auto;
+  margin: 15% auto 0;
+  position: absolute;
+  width: 100%;
+}
+.loading-plane {
+  /**
+  * Paper Plane
+  */
+  /*Paper Plane: Container*/
+  /*Paper Plane: Image*/
+  /*Paper Plane: Animation*/
+}
+.loading-plane svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.loading-plane .plane-container {
+  width: 200px;
+  margin: 0px auto;
+  z-index: 3;
+}
+.loading-plane .plane {
+  width: 100%;
+  height: 60px;
+}
+.loading-plane .plane-container {
+  -webkit-animation: paper-plane-scoping 2s alternate infinite;
+  -moz-animation: paper-plane-scoping 2s alternate infinite;
+  animation: paper-plane-scoping 2s alternate infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+@-webkit-keyframes paper-plane-scoping {
+  0% {
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(100px);
+    -moz-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+}
+.loading-plane .plane {
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation: paper-plane-soaring 4s forwards infinite;
+  -moz-animation: paper-plane-soaring 4s forwards infinite;
+  animation: paper-plane-soaring 4s forwards infinite;
+}
+@-webkit-keyframes paper-plane-soaring {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  40% {
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    transform: rotate(15deg);
+  }
+  50% {
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    transform: rotate(15deg);
+  }
+  60% {
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+  70% {
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}

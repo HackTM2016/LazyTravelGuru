@@ -1,0 +1,17 @@
+
+<md-chips ng-model="autocompleteData.selectedTags" md-autocomplete-snap
+  md-require-match="autocompleteData.autocompleteDemoRequireMatch">
+  <md-autocomplete
+  md-selected-item="autocompleteData.selectedItem"
+  md-search-text="autocompleteData.searchText"
+  md-items="item in autocompleteData.querySearch(autocompleteData.searchText)"
+  md-item-text="item.name"
+  placeholder="Search for a Tag">
+    <span md-highlight-text="autocompleteData.searchText">{{item.name}}</span>
+  </md-autocomplete>
+  <md-chip-template>
+    <span>
+      <strong>{{$chip.name}}</strong>
+    </span>
+  </md-chip-template>
+</md-chips>

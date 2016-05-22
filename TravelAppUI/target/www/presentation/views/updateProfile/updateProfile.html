@@ -1,0 +1,32 @@
+<img src="pic/updateProfileImg.jpg" class="right-img"/>
+
+<md-content class="md-padding update-form" layout="column">
+  <p class="md-headline">Here are some questions for you!</p>
+
+  <p class="md-padding md-headline">1. How old are you?</p>
+  <md-input-container class="md-block">
+    <input required type="number" step="1" name="age" ng-model="data.age" min="1"
+               max="150" />
+  </md-input-container>
+
+  <p class="md-padding md-headline">2. Gender:</p>
+  <md-radio-group ng-model="data.gender" class="md-padding">
+      <md-radio-button value="male" class="md-primary">Male</md-radio-button>
+      <md-radio-button value="female" class="md-primary"> Female </md-radio-button>
+  </md-radio-group>
+
+  <md-list >
+    <div ng-repeat="question in questions">
+      <p class="md-padding md-headline">{{question.text}}</p>
+      <md-subheader class="md-no-sticky">{{question.advice}}</md-subheader>
+      <md-list-item ng-repeat="answer in question.answers">
+        <p> {{answer.text}} </p>
+        <md-checkbox  class="md-secondary" ng-model="answer.check" ></md-checkbox>
+      </md-list-item>
+      <md-divider></md-divider>
+    </div>
+    <md-divider></md-divider>
+  </md-list>
+
+  <md-button ng-click="submit()">submit</md-button>
+</md-content>

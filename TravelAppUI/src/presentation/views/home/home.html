@@ -1,0 +1,83 @@
+
+<img src="pic/Origami-Aeroplane.jpg"class="home-right-img"/>
+<md-progress-linear class="md-warn" ng-show="flightsLoading" md-mode="indeterminate"></md-progress-linear>
+<loading-plane ng-show="flightsLoading"></loading-plane>
+
+<md-content class="md-padding image-background" layout-xs="column" layout="column">
+  <div class="md-padding" ng-hide="pageLoading">
+    <h3 class="md-title" >
+      Based on your answers to our questions this are the recommended destinations for you.
+    </h3>
+    <p class="md-subhead">If you haven't answered our questions yet, <a href="/#/updateProfile">please do it.</a></p>
+    <br/>
+    <p class="md-subhead">Still didn't find what you need?</p>
+    <div class="travel-flight-card" layout="row">
+      <div flex="70">
+        <travel-autocomplete new-tags="newTags" ></travel-autocomplete>
+      </div>
+      <div flex="30">
+        <md-button ng-click="submitNewTags()">Submit</md-button>
+      </div>
+    </div>
+</div>
+  <p class="home-loading-text md-body-5" ng-show="pageLoading"> loading the best deals ...</p>
+
+  <div class="travel-flight-card" ng-repeat="row in data.flights track by $index" >
+    <md-card >
+      <md-card-title>
+        <md-card-title-text >
+          <div layout="row" layout-sm="column" layout-xs="column" >
+
+
+            <div flex-gt-sm="75" flex="100" layout="row" layout-sm="column" layout-xs="column">
+
+              <div flex layout="column" >
+                <span class="md-headline">
+                  From: {{row.departure}}
+                  <i class="material-icons">flight_takeoff</i>
+                </span>
+                <span class="md-subhead">Date: {{row.departureDate}}</span>
+              </div>
+
+              <div flex layout="column">
+                <span class="md-headline">To: {{row.destination}}
+                  <i class="material-icons">flight_land</i>
+                </span>
+                <span class="md-subhead">Date: {{row.arrivalDate}}</span>
+              </div>
+
+
+
+            </div>
+            <div flex layout="column">
+                  <span class="md-headline">Price: {{row.price}} {{row.currency}}</span>
+                  <span class="md-subhead">No stops</span>
+
+            </div>
+          </div>
+
+        </md-card-title-text>
+        <md-card-title-media>
+          <div class="md-media-sm card-media" style="text-align: right">
+            <h3 class="md-headline" >{{row.carrier}}</h3>
+            <!-- <img src="https://lh6.googleusercontent.com/-lITucNA2MiM/AAAAAAAAAAI/AAAAAAAAFK8/pbNj2KQLkOM/photo.jpg"/> -->
+          </div>
+        </md-card-title-media>
+      </md-card-title>
+      <md-card-content>
+        <p>
+          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+        </p>
+      </md-card-content>
+      <md-card-actions layout="row" layout-align="end center">
+        <md-button ng-click="showDetails($event, row)">Details</md-button>
+        <md-button>Buy It</md-button>
+        <md-button class="md-fab md-primary md-mini" aria-label="Eat cake">
+            <md-icon class="material-icons">share</md-icon>
+
+        </md-button>
+    </md-card-actions>
+    </md-card>
+  </div>
+</md-content>
